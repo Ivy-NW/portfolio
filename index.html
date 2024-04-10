@@ -1,854 +1,682 @@
 <!DOCTYPE html>
-<html lang="en">
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="./packages/css/swiper-bundle.min.css">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="./packages/css/styles.css">
 
-  <!-- ======= Start Google Tag Manager ======= -->
+        <title>Njoroge</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#about" class="nav__logo">Ivy Njoroge</a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link">
+                                <i class="uil uil-estate nav__icon"></i>Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class="uil uil-user nav__icon"></i>About
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="uil uil-file-alt nav__icon"></i>Skills
+                            </a>
+                        </li>
+                          <li class="nav__item">
+                            <a href="#services" class="nav__link">
+                                <i class="uil uil-briefcase-alt nav__icon"></i>Services
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">
+                                <i class="uil uil-scenery nav__icon"></i>Portfolio                                
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="uil uil-message nav__icon"></i>Contact                               
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+                <div class="nav__btns">
+                    <!-- Theme change button -->
 
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-5BB8W2X');</script>
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
 
-  <!-- ======= End Google Tag Manager ======= -->
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            <a href="https://www.linkedin.com/in/ivynjoroge3012?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="home__social-icon">
+                                <i class="uil uil-linkedin-alt"></i>
+                            </a>
+                            <a href="https://twitter.com/Connected_Bi" target="_blank" class="home__social-icon">
+                                <i class="uil uil-twitter-alt"></i>
+                            </a>
+                            <a href="https://github.com/irisvlack" target="_blank" class="home__social-icon">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                        </div>
 
+                        <div class="home__img">
+                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                    <image class="home__blob-img" x="" xlink:href="packages/images/me.jpg"/>
+                                </g>
+                            </svg>
+                        </div>
 
-  <link rel="icon" type="image/png" href="assets/img/logo.png"/>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+                        <div class="home__data">
+                            <h1 class="home__title">Hi, I'am Ivy Njoroge</h1>
+                            <h3 class="home__subtitle">Software Engineer</h3>
+                            <p class="home__description">As a skilled software engineer with a passion for creating cutting-edge solutions, I specialize in designing, developing, and delivering high-quality software applications that meet the unique needs of businesses and individuals alike.</p>
+                            <a href="#contact" class="button button--flex home__button">
+                                Contact Me<i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
 
-  <title>My Portfolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-button button--flex">
+                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                            <span class="home__scroll-name">Scroll Down</span>
+                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
 
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <h2 class="section__title">About Me</h2>
+                <span class="section__subtitle">My Introduction</span>
 
+                <div class="about__container container grid">
+                    <img src="packages/images/m2.jpg" alt="" class="about__img">
+                    <div class="about__data">
+                        <p class="about__description">
+                            As an experienced software engineer, I possess a strong background in developing robust, scalable, and high-performance applications. With a passion for problem-solving and a commitment to delivering quality solutions, I leverage my technical expertise to design, build, and maintain software systems that meet the ever-evolving needs of businesses and end-users.
+                        </p>
+                        <div class="about__info">
+                            <div>
+                                <span class="about__info-title">05+</span>
+                                <span class="about__info-name">Completed <br> certifications</span>
+                            </div>
+                            <div>
+                                <span class="about__info-title">01+</span>
+                                <span class="about__info-name">Freelance<br>worked</span>
+                            </div>
+                            <div>
+                                <span class="about__info-title"></span>
+                                <span class="about__info-name"><br></span>
+                            </div>
+                        </div>
 
-  <!-- Google Fonts -->
+                        <div class="about__buttons">
+                            <a download="" href="packages/pdf/Ivy's Resume.pdf" class="button button--flex">
+                                Download Resume<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+            <!--==================== SKILLS ====================-->
+            <section class="skills section" id="skills">
+                <h2 class="section__title">Skills</h2>
+                <span class="section__subtitle">My technical level</span>
 
+                <div class="skills__container container grid">
+                    <div>
+                    </div>
 
+                    <div>
+                        <!--==================== SKILLS 1 ====================-->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                               <i class="uil uil-brackets-curly skills__icon"></i>
+                               <div>
+                                   <h1 class="skills__title">Web Developer</h1>
+                                   <span class="skills__subtitle">More than 1 year</span>
+                               </div>
 
-  <!-- Vendor CSS Files -->
+                               <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">HTML</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__html"></span>
+                                    </div>
+                                </div>
+                               <div class="skills__data">
+                                   <div class="skills__titles">
+                                       <h3 class="skills__name">CSS</h3>
+                                       <span class="skills__number">80%</span>
+                                   </div>
+                                   <div class="skills__bar">
+                                       <span class="skills__percentage skills__css"></span>
+                                   </div>
+                               </div>
+                               <div class="skills__data">
+                                   <div class="skills__titles">
+                                       <h3 class="skills__name">JavaScript</h3>
+                                       <span class="skills__number">75%</span>
+                                   </div>
+                                   <div class="skills__bar">
+                                       <span class="skills__percentage skills__js"></span>
+                                   </div>
+                               </div>
+                               <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Node.js</h3>
+                                    <span class="skills__number">70%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__js"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Express.js</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__js"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">React</h3>
+                                    <span class="skills__number">65%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__js"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Git</h3>
+                                    <span class="skills__number">75%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__js"></span>
+                                </div>
+                            </div>
+                           </div>
+                       </div>
+                    </div>
+                </div>
+            </section>
 
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+              <!--==================== QUALIFICATION ====================-->
+        <section class="qualification__section">
+            <h2 class="section__title">Qualification</h2>
+            <span class="section__subtitle">My personal journey</span>
 
+            <div class="qualification__container container">
+                <div class="qualification__tabs">
+                    <div class="qualification__button button--flex qualification__active" data-target='#education'>
+                        <i class="uil uil-graduation-cap qualification__icon"></i>
+                        Education
+                    </div>
 
+                    <div class="qualification__button button--flex" data-target="#work">
+                        <i class="uil uil-briefcase-alt qualification__icon"></i>
+                        Work
+                    </div>
+                </div>
 
-  <!-- Template Main CSS File -->
+                <div class="qualification__sections">
+            <!--==================== QUALIFICATION CONTENT 1 ====================-->
+            <div class="qualification__content qualification__active" data-content id="education">
+             <!--==================== QUALIFICATION 1 ====================--> 
+             <div class="qualification__data">
+                 <div>
+                     <h3 class="qualification__title">Kenya Certificate Of Primary Education</h3>
+                     <span class="qualification__subtitle">Umoja Primary School, Kenya</span>
+                     <div class="qualification__calendar">
+                        <i class="uil uil-calendar-alt"></i>
+                        2008 - 2017
+                     </div>
+                 </div>
 
-  <link href="assets/css/style.css" rel="stylesheet">
+                 <div>
+                     <span class="qualification__rounder"></span>
+                     <span class="qualification__line"></span>
+                 </div>
+             </div>
+             
+             <!--==================== QUALIFICATION 2 ====================--> 
+             <div class="qualification__data">
+                <div></div>
+                <div>
+                   <span class="qualification__rounder"></span>
+                   <span class="qualification__line"></span>
+                </div>
 
+                <div>
+                    <h3 class="qualification__title">Kenya Certificate Of Secondary Education</h3>
+                    <span class="qualification__subtitle">St.Teresa's Girls' - Kithimu, Kenya</span>
+                    <div class="qualification__calendar">
+                       <i class="uil uil-calendar-alt"></i>
+                       2018 - 2021
+                    </div>
+                </div>
+            </div> 
 
+            <!--==================== QUALIFICATION 3 ====================--> 
+            <div class="qualification__data">
+                <div>
+                    <h3 class="qualification__title">BSc Software Engineering</h3>
+                    <span class="qualification__subtitle">Zetech University</span>
+                    <div class="qualification__calendar">
+                       <i class="uil uil-calendar-alt"></i>
+                       2022 - present
+                    </div>
+                </div>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169007209-3"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-169007209-3');
-  </script>
-
-
-
-  <!-- =======================================================
-  * Template Name: Personal - v2.1.0
-  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-
-</head>
-
-
-
-<body>
-  
-  <!-- ======= Start Google Tag Manager (noscript) ======= -->
-
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BB8W2X"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  
-  <!-- ======= End Google Tag Manager (noscript) ======= -->
-
-
-  
-  <!--
-  <img class="background-image" src="assets/img/background/tunnel_slowmo.gif" />
-  -->
-  <video class="background-image" src="assets/img/background/binary_rain.mp4" muted loop autoplay></video>
-
-
-  <!-- ======= Start Header ======= -->
-  
-  <header id="header" class="header-tops">
-    <div class="container">
-      <h1><a href="index.html">Aras Güngöre</a></h1>
-      <h2 style="color:#fff">I am <span class="typing" style="color:#12D640"></span></h2>
-      <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="#header"> <span>Home</span></a></li>
-          <li><a href="#about"> <span>About</span></a></li>
-          <li><a href="#education"> <span>Education</span></a></li>
-          <li><a href="#experience"> <span>Experience</span></a></li>
-          <li><a href="#projects"> <span>Projects</span></a></li>
-          <li><a href="#skills"> <span>Skills</span></a></li>
-          <li><a href="#cv"> <span>CV</span></a></li>
-          <li><a href="#contact"> <span>Contact</span></a></li>
-        </ul>
-      </nav>
-      <div class="social-links">
-        <a href="mailto:arasgungore09@gmail.com" target="_blank" class="gmail"><i class="bx bxl-google"></i></a>
-        <a href="https://www.linkedin.com/in/arasgungore" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://github.com/arasgungore" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-        <a href="https://www.youtube.com/@arasgungore" target="_blank" class="youtube"><i class="bx bxl-youtube"></i></a>
-        <!-- <a href="https://www.researchgate.net/profile/Aras-Guengoere" target="_blank" class="researchgate"><i class="bx bxl-researchgate"></i></a> -->
-        <!-- <a href="https://stackoverflow.com/users/23314477/arasgungore" target="_blank" class="stackoverflow"><i class="bx bxl-stackoverflow"></i></a> -->
-        <a href="https://www.hackerrank.com/arasgungore" target="_blank" class="hackerrank"><img class="svg" src="assets/img/social/hackerrank.svg" width="13" /></a>
-        <a href="https://leetcode.com/arasgungore" target="_blank" class="leetcode"><img class="svg" src="assets/img/social/leetcode.svg" width="13" /></a>
-      </div>
-    </div>
-  </header>
-  
-  <!-- ======= End Header ======= -->
-
-
-
-  <!-- ======= Start About Section ======= -->
-
-  <section id="about" class="about">
-    <div class="about-me container">
-      <div class="section-title">
-        <h2>About Me</h2>
-      </div>
-      <div class="row">
-        <div class="col-lg-4" data-aos="fade-right">
-          <img src="assets/img/about/max_planck.jpg" class="img-fluid" alt="">
-        </div>
-        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <p>
-            Hi there, my name is Aras Güngöre.<br><br>
+                <div>
+                    <span class="qualification__rounder"></span>
+                    <span class="qualification__line"></span>
+                </div>
+            </div> 
+            </div>
             
-            I’m a graduate of Boğaziçi University with a bachelor’s degree in Electrical and Electronics Engineering and a minor
-            degree in Computer Science. My academic journey seamlessly integrates these fields, providing me with a strong
-            foundation in signal processing, machine learning, computer vision, embedded systems, and software development –
-            all areas that align with my personal interests. This combination of skills allows me to innovate at the crossroads
-            of hardware and software, bridging intricate technological gaps.<br><br>
+            <!--==================== QUALIFICATION CONTENT 2 ====================-->
+            <div class="qualification__content" data-content id="work">
+                <!--==================== QUALIFICATION 1 ====================--> 
+                <div class="qualification__data">
+                    <div>
+                        <h3 class="qualification__title">Developer</h3>
+                        <span class="qualification__subtitle">FIMA- Kenya</span>
+                        <div class="qualification__calendar">
+                           <i class="uil uil-calendar-alt"></i>
+                           2023 - present
+                        </div>
+                    </div>
+   
+                    <div>
+                        <span class="qualification__rounder"></span>
+                        <span class="qualification__line"></span>
+                    </div>
+                </div>          
+               </div> 
+             
+               </div>
+            </div>
+        </section>
+      
+        <!--==================== SERVICES ====================-->
+        <section class="services section" id="services">
+            <h2 class="section__title">Services</h2>
+            <span class="section__subtitle">What I offer</span>
+
+            <div class="services__container container grid">
+        <!--==================== SERVICES 1 ====================-->  
+        <div class="services__content">
+            <div>
+                <i class="uil uil-arrow services__icon"></i>
+                <h3 class="services__title">Front-End Developer<br></h3>
+            </div>
+            <span class="button button--flex button--small button--link services__button">
+                View more
+                <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+
+            <div class="services__modal">
+                <div class="services__modal-content">
+                    <h4 class="services__modal-title">Front-End Developer <br></h4>
+                    <i class="uil uil-times services__modal-close"></i>
+
+                    <ul class="services__modal-services grid">
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Front-end Architecture & Design: Designing the structure and layout of the front-end interface.</p>
+                        </li>
+
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Data Migration, Support, and Maintenance: Handling data migration, providing support, and maintaining front-end systems.</p>
+                        </li>
+
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>HTML5/CSS Development: Implementing the latest HTML5 and CSS features.</p>
+                        </li>
+
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>UI/UX App Development: Focusing on user interface and user experience design.</p>
+                        </li>
+
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Legacy Front-end Modernization: Upgrading outdated front-end systems to modern standards.</p>
+                        </li>
+
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Custom Front End Web Development: Tailoring front-end solutions to meet specific project requirements.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>  
+        
+       
+        <!--==================== SERVICES 2 ====================-->
+        <div class="services__content">
+            <div>
+                <i class="uil uil-arrow services__icon"></i>
+                <h3 class="services__title">Web Developer<br></h3>
+            </div>
+            <span class="button button--flex button--small button--link services__button">
+                View more
+                <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+
+            <div class="services__modal">
+                <div class="services__modal-content">
+                    <h4 class="services__modal-title">Web  Developer<br></h4>
+                    <i class="uil uil-times services__modal-close"></i>
+
+                    <ul class="services__modal-services grid">
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>I develop the user interface.</p>
+                        </li>
+
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Webpage development.</p>
+                        </li>
+
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>I create Ux element interactions.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div> 
+
+                <!--==================== SERVICES 1 ====================-->  
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-arrow services__icon"></i>
+                        <h3 class="services__title">Software Engineer<br></h3>
+                    </div>
+                    <span class="button button--flex button--small button--link services__button">
+                        View more
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+        
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Software Engineer<br></h4>
+                            <i class="uil uil-times services__modal-close"></i>
+        
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Custom Software Development: This involves building custom software applications or systems tailored to the specific requirements and needs of the client. This can include web applications, mobile apps, desktop software, or enterprise systems.</p>
+                                </li>
+        
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Software Consulting: Software engineers can offer consulting services to advise clients on technology choices, system architectures, software development methodologies, and best practices. This can help clients make informed decisions and ensure their software projects are well-planned and executed.</p>
+                                </li>
+        
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Software Integration: Integrating new software with existing systems or third-party applications is a common service offered by software engineers. This ensures seamless communication and data exchange between different software components.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>  
+  
+       
+        </div>
+        </section>
+        <!--==================== PORTFOLIO ====================-->
+        <section class="portfolio section" id="portfolio">
+
+            <h2 class="section__title">Portfolio</h2>
+            <span class="section__subtitle">Most recent works</span>
+
+            <div class="portfolio__container container swiper-container">
+                <div class="swiper-wrapper">
+        <!--==================== PORTFOLIO 1 ====================-->
+        
+            <div class="portfolio__content grid swiper-slide">
+                <img src="./packages/images/farmwhisper.png" alt="" class="portfolio__img">
+
+                <div class="portfolio_">
+                    <h3 class="portfolio__title">farmwhisper</h3>
+                    <p class="portfolio__description">Innovative Farming Assistant adaptable to all devices, 
+                        with ui components and animated interactions.</p>
+                    <a href="https://ivynjoroge30.wixsite.com/farmwhispers" class="button button--flex button--small portfolio__button">
+                        Demo
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!--==================== PORTFOLIO 2 ====================-->
+        
+            <div class="portfolio__content grid swiper-slide">
+                <img src="./packages/images/chess.png" alt="" class="portfolio__img">
+
+                <div class="portfolio_">
+                    <h3 class="portfolio__title">Chess Kenya</h3>
+                    <p class="portfolio__description">Chess Kenya is adaptable to all devices, with 
+                        ui components and animated interactions.</p>
+                    <a href="https://ivynjoroge30.wixsite.com/chess-hub" class="button button--flex button--small portfolio__button">
+                        Demo
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a>
+                </div>
+            </div>
+
+                </div>
+
+            <!-- add arrows-->
+            <div class="swiper-button-next">
+                <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+            </div>
+
+            <div class="swiper-button-prev">
+                <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+            </div>
+
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
             
-            I’ve gained experience across various sectors, including IT, R&D, telecommunications, and defense industries.
-            In these roles, I’ve used my technical expertise and collaboration skills to contribute to significant projects in
-            intelligent systems, robotics, generative AI, image processing, and digital communications. These experiences demonstrate
-            my ability to navigate complex challenges and drive interdisciplinary projects, both in academia and industry. With a
-            passion for technology and a versatile skill set that spans multiple domains, I’m well-positioned to make lasting contributions
-            through innovation and teamwork.
-          </p>
+        
         </div>
-      </div>
-    </div>
-  </section>
-  
-  <!-- ======= End About Section ======= -->
 
+        </section>
 
+        <!--==================== PROJECT IN MIND ====================-->
+        <section class="project section">
 
-  <!-- ======= Start Education Section ======= -->
-
-  <section id="education" class="services">
-    <div class="container">
-      <div class="section-title">
-        <h2>Education</h2>
-      </div>
-      <div class="row">
-        <div class="col-lg-12" data-aos="fade-up">
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <a href="http://www.boun.edu.tr/en_US" target="_blank"><img src="assets/img/education/boun_transparent.png" class="img-fluid" style="float:left;margin:0 10px 0 0;" width="90"></a>
-            <h4 style="text-align:left;"><a href="http://www.boun.edu.tr/en_US" target="_blank" style="color:#12d640">Boğaziçi University</a><br> </h4>
-            <h5 style="text-align:left;"><em>Bachelor of Science in Electrical and Electronics Engineering; <strong>GPA: 3.62/4.00</strong></em></h5>
-            <span class="left" style="float:left;color:#fff;"><em>September 2018 - June 2023</em></span>
-            <span class="right" style="float:right;color:#fff;"><em>Istanbul, Turkey</em></span><br><br>
-            <h6 style="text-align:left;"><strong>Field of Specialization:</strong> Communication Systems and Signal Processing</h6>
-            <h6 style="text-align:left;"><strong>Senior Design Project:</strong> Keyword Search for Sign Language</h6>
-            <h6 style="text-align:left;"><strong>High Honors Degree:</strong> Awarded to Bachelor alumni who have graduated with a GPA greater than or equal to 3.50. (July 2023)</h6>
-            <h6 style="text-align:left;"><strong>National University Admission Exam (YKS):</strong> Ranked 75<sup>th</sup> in Mathematics and Science among ca. 2.3 million candidates with a test score of 489.92/500. (July 2018)</h6>
-            <h6 style="text-align:left;"><strong>Relevant Coursework:</strong></h6>
-            <ul style="columns:2;text-align:left;">
-              <li>Materials Science</li>
-              <li>Electrical Circuits I&#8209;II</li>
-              <li>Digital System Design</li>
-              <li>Numerical Methods</li>
-              <li>Probability Theory</li>
-              <li>Electronics I&#8209;II</li>
-              <li>Signals and Systems</li>
-              <li>Electromagnetic Field Theory</li>
-              <li>Energy Conversion</li>
-              <li>System Dynamics and Control</li>
-              <li>Communication Engineering</li>
-              <li>Pattern Recognition</li>
-              <li>Introduction to Digital Signal Processing</li>
-              <li>Introduction to Digital Communications</li>
-              <li>Introduction to Database Systems</li>
-              <li>Introduction to Image Processing</li>
-              <li>Machine Vision</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-12" data-aos="fade-up">
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <a href="http://www.boun.edu.tr/en_US" target="_blank"><img src="assets/img/education/boun_transparent.png" class="img-fluid" style="float:left;margin:0 10px 0 0;" width="90"></a>
-            <h4 style="text-align:left;"><a href="http://www.boun.edu.tr/en_US" target="_blank" style="color:#12d640">Boğaziçi University</a><br> </h4>
-            <h5 style="text-align:left;"><em>Minor Degree in Computer Science; <strong>GPA: 3.58/4.00</strong></em></h5>
-            <span class="left" style="float:left;color:#fff;"><em>October 2020 - June 2023</em></span>
-            <span class="right" style="float:right;color:#fff;"><em>Istanbul, Turkey</em></span><br><br>
-            <h6 style="text-align:left;"><strong>Relevant Coursework:</strong></h6>
-            <ul style="columns:2;text-align:left;">
-              <li>Discrete Computational Structures</li>
-              <li>Introduction to Object&#8209;Oriented Programming</li>
-              <li>Data Structures and Algorithms</li>
-              <li>Computer Organization</li>
-              <li>Fundamentals of Software Engineering</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-12" data-aos="fade-up">
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <a href="https://kocaelifenlisesi.meb.k12.tr/" target="_blank"><img src="assets/img/education/kfl_transparent.png" class="img-fluid" style="float:left;margin:0 10px 0 0;" width="90"></a>
-            <h4 style="text-align:left;"><a href="https://kocaelifenlisesi.meb.k12.tr/" target="_blank" style="color:#12d640">Kocaeli Science High School</a><br> </h4>
-            <h5 style="text-align:left;"><em>High School Diploma; <strong>GPA: 97.03/100</strong></em></h5>
-            <span class="left" style="float:left;color:#fff;"><em>September 2014 - June 2018</em></span>
-            <span class="right" style="float:right;color:#fff;"><em>Kocaeli, Turkey</em></span><br><br>
-            <h6 style="text-align:left;"><strong>Kocaeli Science High School Valedictorian Award:</strong> Graduated as the highest ranked student in my class. (June 2018)</h6>
-          </div>
-        </div>
-        <div class="col-lg-12" data-aos="fade-up">
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <a href="https://kyiv.qsi.org/" target="_blank"><img src="assets/img/education/kis_transparent.png" class="img-fluid" style="float:left;margin:0 10px 0 0;" width="90"></a>
-            <h4 style="text-align:left;"><a href="https://kyiv.qsi.org/" target="_blank" style="color:#12d640">Kyiv International School</a><br> </h4>
-            <h5 style="text-align:left;"><em>Primary Education</em></h5>
-            <span class="left" style="float:left;color:#fff;"><em>August 2008 - December 2009</em></span>
-            <span class="right" style="float:right;color:#fff;"><em>Kyiv, Ukraine</em></span><br><br>
-            <h6 style="text-align:left;">
-              With over 770 students of 50 different nationalities, the Preschool through Secondary School programs at Kyiv International School
-              focus on the development of 21st Century Learning skills such as critical thinking and problem solving; leadership and collaboration;
-              cultural awareness and digital literacy.
-            </h6>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======= End Education Section ======= -->
-
-
-
-  <!-- ======= Start Experience Section ======= -->
-
-  <section id="experience" class="services">
-    <div class="container">
-      <div class="section-title">
-        <h2>Experience</h2>
-      </div>
-      <div class="row">
-        <div class="col-lg-12" data-aos="fade-up">
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <a href="https://www.avikon.com.tr/en" target="_blank"><img src="assets/img/experience/avikon_transparent.png"
-                class="img-fluid" style="float:left;margin:0 10px 0 0;" width="90"></a>
-            <h4 style="text-align:left;"><a href="https://www.avikon.com.tr/en" target="_blank" style="color:#12d640">Avikon</a><br>
-            </h4>
-            <h5 style="text-align:left;"><em>Software Engineer</em></h5>
-            <span class="left" style="float:left;color:#fff;"><em>December 2023 - Present, Full-time</em></span>
-            <span class="right" style="float:right;color:#fff;"><em>Istanbul, Turkey</em></span><br><br>
-            <ul style="text-align:left;">
-              <li>
-                Designed a Qt&#8209;based chat application utilizing TCP for real&#8209;time communication within a
-                client&#8209;server architecture, demonstrating expertise in socket programming, data serialization, and message routing.
-              </li>
-              <li>
-                Crafted message types in IDL and designed a data&#8209;centric publish&#8209;subscribe architecture based on a
-                flyweight design pattern to implement OpenDDS for a radar system’s command and control interface. Utilized QoS
-                policies to facilitate the transmission of both volatile and persistent data across different topics.
-              </li>
-              <li>
-                Implemented a fully asynchronous AMQP&#8209;based C++ client with a layered architecture for RabbitMQ message broker to
-                ensure seamless message handling among multiple topics.
-              </li>
-              <li>
-                Compared time complexities of computer graphics algorithms by conducting tests over a polygon collection stored in
-                MongoDB to optimize the point&#8209;in&#8209;polygon problem for a GIS application using Boost libraries.
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <a href="http://semper-tech.com/" target="_blank"><img src="assets/img/experience/sempertech_transparent.png" class="img-fluid" style="float:left;margin:0 10px 0 0;" width="90"></a>
-            <h4 style="text-align:left;"><a href="http://semper-tech.com/" target="_blank" style="color:#12d640">SemperTech</a><br>
-            </h4>
-            <h5 style="text-align:left;"><em>Software Engineer</em></h5>
-            <span class="left" style="float:left;color:#fff;"><em>September 2023 - December 2023, Full-time</em></span>
-            <span class="right" style="float:right;color:#fff;"><em>Istanbul, Turkey</em></span><br><br>
-            <ul style="text-align:left;">
-              <li>
-                Worked on the “Arçelik Digital Home Energy” project in a collaborative effort with DAI&#8209;Labor at the Technical
-                University of Berlin under the supervision of <a href="https://www.linkedin.com/in/prof-dr-dr-h-c-sahin-albayrak-65452a1/" target="_blank" style="color:#12d640">Prof. Dr. Şahin Albayrak</a>.
-              </li>
-              <li>
-                Simulated discovery, pairing, and data exchange processes using the EEBUS protocol suite with C# and Go.
-                Migrated the framework from Go to C++ in order to ensure future adaptability for smart home IoT devices.
-              </li>
-              <li>
-                Implemented the TLS protocol for secure data exchange using the X.509 standard and integrated multicast DNS
-                for seamless communication to complement the development of SHIP and SPINE protocols.
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <a href="https://www.scaleai.ca/" target="_blank"><img src="assets/img/experience/scaleai_transparent.png" class="img-fluid" style="float:left;margin:0 10px 0 0;" width="90"></a>
-            <h4 style="text-align:left;"><a href="https://www.scaleai.ca/" target="_blank" style="color:#12d640">Scale AI</a><br> </h4>
-            <h5 style="text-align:left;"><em>Prompt Engineer</em></h5>
-            <span class="left" style="float:left;color:#fff;"><em>March 2023 - September 2023, Freelance</em></span>
-            <span class="right" style="float:right;color:#fff;"><em>San Francisco, California, United States (Remote)</em></span><br><br>
-            <ul style="text-align:left;">
-              <li>
-                Crafted elaborate Turkish prompts for various generative AI tasks. Tailored prompts using well&#8209;defined
-                formats such as natural language questions and structured inputs based on the task’s domain to fine&#8209;tune
-                the LLM, improving the chatbot’s responses and enhancing overall performance.
-              </li>
-              <li>
-                Provided user feedback by reviewing and scoring the chatbot’s responses to ensure they align with intended
-                chatbot behaviors and the chatbot produces accurate and contextually appropriate responses to given prompts.
-              </li>
-              <li>
-                Engaged in collaborative meetings with cross&#8209;functional teams and project coordinators, actively seeking
-                guidance, addressing queries, and collectively brainstorming strategies to generate higher&#8209;quality prompts.
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <a href="https://is.mpg.de/" target="_blank"><img src="assets/img/experience/mpi_transparent.png" class="img-fluid" style="float:left;margin:0 10px 0 0;" width="90"></a>
-            <h4 style="text-align:left;"><a href="https://is.mpg.de/" target="_blank" style="color:#12d640">Max Planck Institute for Intelligent Systems</a><br> </h4>
-            <h5 style="text-align:left;"><em>Undergraduate Researcher</em></h5>
-            <span class="left" style="float:left;color:#fff;"><em>June 2022 - August 2022, Internship</em></span>
-            <span class="right" style="float:right;color:#fff;"><em>Stuttgart, Baden-Württemberg, Germany</em></span><br><br>
-            <ul style="text-align:left;">
-              <li>
-                Engaged in collaborative research within the Robotics, Collectives and Learning subgroup at the Physical Intelligence Department with Ph.D.
-                students <a href="https://www.linkedin.com/in/sinan-ozgun-demir-981311129/" target="_blank" style="color:#12d640">Sinan Özgün Demir</a>
-                and <a href="https://www.linkedin.com/in/alpkaracakol/" target="_blank" style="color:#12d640">Alp Can Karacakol</a>
-                on a project about 3D printing and heat&#8209;assisted magnetic programming of soft machines under the supervision of
-                <a href="https://www.linkedin.com/in/metin-sitti-0a8a712/" target="_blank" style="color:#12d640">Prof. Dr. Metin Sitti</a>.
-              </li>
-              <li>
-                Optimized a C++ ROS package for real&#8209;time conversion of 3D motion controller events to ROS messages,
-                achieving high&#8209;frequency and buffer&#8209;free synchronization.
-              </li>
-              <li>
-                Developed an Arduino Mega driver to activate a laser and pressure regulator, for monitoring coil temperatures and PID
-                tuning to control the coil currents. Established a robust ROS&#8209;Arduino communication network by integrating ROSSerial
-                and handshaking to simulate a 3D printing and magnetic programming process with Python.
-              </li>
-              <li>
-                Designed the project’s system and software architecture, flowchart, and state machine diagram. Expanded G&#8209;code
-                capabilities by incorporating spherical coordinates to specify the direction of magnetization for shape morphing.
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <a href="http://nrg.boun.edu.tr/" target="_blank"><img src="assets/img/experience/nrg_transparent.png" class="img-fluid" style="float:left;margin:0 10px 0 0;" width="90"></a>
-            <h4 style="text-align:left;"><a href="http://nrg.boun.edu.tr/" target="_blank" style="color:#12d640">Nanonetworking Research Group, Boğaziçi University</a><br> </h4>
-            <h5 style="text-align:left;"><em>Undergraduate Researcher</em></h5>
-            <span class="left" style="float:left;color:#fff;"><em>October 2021 - June 2022, Part-time</em></span>
-            <span class="right" style="float:right;color:#fff;"><em>Istanbul, Turkey</em></span><br><br>
-            <ul style="text-align:left;">
-              <li>
-                Worked on the “Design and Implementation of Molecular Communication Systems Using Index Modulation” project under the
-                supervision of <a href="https://www.linkedin.com/in/alipusane/" target="_blank" style="color:#12d640">Prof. Dr. Ali Emre Pusane</a>.
-              </li>
-              <li>
-                Simulated the Brownian motion of molecules in a SISO MCvD system and predicted simulation parameters such as
-                receiver radius, diffusion coefficient, and transmitter&#8209;receiver distance using CNNs with Keras and TensorFlow.
-              </li>
-              <li>
-                Plotted the arrival of molecules per symbol duration in a SISO MCvD system using Binomial, Poisson, and
-                Gaussian model approximations with MATLAB.
-              </li>
-              <li>
-                Ran Monte Carlo simulations of the Gaussian model to encode and decode randomized binary sequences in a SISO
-                MCvD system using BCSK modulation technique and calculated the bit error rate on Z&#8209;channel.
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <a href="https://www.sestek.com/" target="_blank"><img src="assets/img/experience/sestek_transparent.png" class="img-fluid" style="float:left;margin:0 10px 0 0;" width="90"></a>
-            <h4 style="text-align:left;"><a href="https://www.sestek.com/" target="_blank" style="color:#12d640">SESTEK Speech Enabled Software Technologies</a><br> </h4>
-            <h5 style="text-align:left;"><em>AI Research and Development Intern</em></h5>
-            <span class="left" style="float:left;color:#fff;"><em>January 2022 - February 2022, Internship</em></span>
-            <span class="right" style="float:right;color:#fff;"><em>Istanbul, Turkey</em></span><br><br>
-            <ul style="text-align:left;">
-              <li>
-                Executed diverse NLP tasks, including NER, POS tagging, sentiment analysis, text classification, and extractive
-                and generative QA using transformers and Hugging Face libraries. Conducted a thorough literature review on
-                information retrieval and reading comprehension to stay updated on SOTA ML models.
-              </li>
-              <li>
-                Developed a generative QA system with dense passage retrieval (DPR) and retrieval-augmented generation (RAG)
-                techniques using the Haystack framework and PyTorch.
-              </li>
-              <li>
-                Worked on a Turkish open&#8209;domain QA system made by fine&#8209;tuning BERTurk and XLM&#8209;Roberta models.
-                Tabularized exact match and F1 scores derived from DeepMind’s XQuAD and various Turkish data sets.
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <a href="https://www.meteksan.com/en/" target="_blank"><img src="assets/img/experience/meteksan_transparent.png" class="img-fluid" style="float:left;margin:0 10px 0 0;" width="90"></a>
-            <h4 style="text-align:left;"><a href="https://www.meteksan.com/en/" target="_blank" style="color:#12d640">Meteksan Defense Industry Inc.</a><br> </h4>
-            <h5 style="text-align:left;"><em>Analog Design Engineering Intern</em></h5>
-            <span class="left" style="float:left;color:#fff;"><em>July 2021 - August 2021, Internship</em></span>
-            <span class="right" style="float:right;color:#fff;"><em>Ankara, Turkey</em></span><br><br>
-            <ul style="text-align:left;">
-              <li>
-                Designed and simulated numerous analog circuits such as voltage&#8209;mode controlled buck converter, phase&#8209;shifted
-                full&#8209;bridge isolated DC&#8209;DC converter, and EMI filters with LTspice. Integrated these circuits and implemented
-                a 320 W power distribution unit to be used in a radar system’s power circuit board.
-              </li>
-              <li>
-                Researched real&#8209;world compatible electronic components to be used in such circuits including GaNFETs, high&#8209;side
-                gate drivers, and Schottky diodes.
-              </li>
-              <li>
-                Assembled PCBs of both common and differential mode filters and used VNA Bode 100 to measure the cut&#8209;off
-                frequencies.
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======= End Experience Section ======= -->
-
-
-
-  <!-- ======= Start Projects Section ======= -->
-
-  <section id="projects" class="services">
-    <div class="container">
-      <div class="section-title">
-        <h2>Projects</h2>
-      </div>
-      <div class="row">
-        <div class="col-lg-12" data-aos="fade-up" style="display:inline-block;">
-          <div class="col-md-4 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding:0px 0px;padding-bottom:5px;display:inline-block;">
-            <a href="https://github.com/arasgungore/filters-and-fractals" target="_blank" rel="noreferrer"><img style="padding:5px 5px;" src="assets/img/projects/image_manipulation_and_fractals.jpg" class="img-fluid" width="300" height="300"></a>
-            <a href="https://github.com/arasgungore/filters-and-fractals" target="_blank" rel="noreferrer"><h5 style="padding:5px 5px;color:#12d640"><strong>Filters and Fractals</strong></h5></a>
-            <p style="padding:0px 2px;color:#fff;">A C project which implements various image processing operations and recursive fractal generating algorithms.</p>
-          </div>
-          <div class="col-md-4 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding:0px 0px;padding-bottom:5px;display:inline-block;">
-            <a href="https://github.com/arasgungore/N-puzzle-solver" target="_blank" rel="noreferrer"><img style="padding:5px 5px;" src="assets/img/projects/n_puzzle_solver.jpg" class="img-fluid" width="324" height="324"></a>
-            <a href="https://github.com/arasgungore/N-puzzle-solver" target="_blank" rel="noreferrer"><h5 style="padding:5px 5px;color:#12d640"><strong>N&#8209;Puzzle Solver</strong></h5></a>
-            <p style="padding:0px 2px;color:#fff;">A C++ project which efficiently solves any given N&#8209;puzzle using backtracking on a decision tree.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======= End Projects Section ======= -->
-
-
-
-  <!-- ======= Start Skills Section ======= -->
-
-  <section id="skills" class="services">
-    <div class="container">
-      <div class="section-title">
-        <h2>Skills</h2>
-      </div>
-      <div class="row">
-        <div class="col-lg-12" data-aos="fade-up">
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <h4 style="text-align:left;color:#12d640;">Languages</h4>
-            <div style="text-align:left;">
-              <figure class="item" style="display:inline-block;">
-                <a href="https://www.cprogramming.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/arasgungore/arasgungore/main/icons/c.svg" alt="c" width="40" height="40" /> </a>
-                <figcaption style="text-align:center;">C</figcaption>
-              </figure>
-              &nbsp; &nbsp;
-
-              <figure class="item" style="display:inline-block;">
-                <a href="https://www.cplusplus.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/arasgungore/arasgungore/main/icons/cplusplus.svg" alt="cplusplus" width="40" height="40" /> </a>
-                <figcaption style="text-align:center;">C++</figcaption>
-              </figure>
-              &nbsp; &nbsp;
-
-              <figure class="item" style="display:inline-block;">
-                <a href="https://dotnet.microsoft.com/en-us/languages/csharp" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40" /> </a>
-                <figcaption style="text-align:center;">C#</figcaption>
-              </figure>
-              &nbsp; &nbsp;
-              
-              <figure class="item" style="display:inline-block;">
-                <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40" /> </a>
-                <figcaption style="text-align:center;">Java</figcaption>
-              </figure>
-              &nbsp; &nbsp;
-              
-              <figure class="item" style="display:inline-block;">
-                <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40" /> </a>
-                <figcaption style="text-align:center;">Python</figcaption>
-              </figure>
-              &nbsp; &nbsp;
-
-              <figure class="item" style="display:inline-block;">
-                <a href="https://golang.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" alt="go" width="40" height="40" /> </a>
-                <figcaption style="text-align:center;">Go</figcaption>
-              </figure>
-              &nbsp; &nbsp;
-
-              <figure class="item" style="display:inline-block;">
-                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40" /> </a>
-                <figcaption style="text-align:center;">JavaScript</figcaption>
-              </figure>
-              &nbsp; &nbsp;
-
-              <figure class="item" style="display:inline-block;">
-                <a href="https://www.typescriptlang.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40" /> </a>
-                <figcaption style="text-align:center;">TypeScript</figcaption>
-              </figure>
-              &nbsp; &nbsp;
-
-              <figure class="item" style="display:inline-block;">
-                <a href="https://developer.apple.com/swift/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/swift/swift-original.svg" alt="swift" width="40" height="40" /> </a>
-                <figcaption style="text-align:center;">Swift</figcaption>
-              </figure>
-              &nbsp; &nbsp;
-
-              <figure class="item" style="display:inline-block;">
-                <a href="https://www.scala-lang.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/scala/scala-original.svg" alt="scala" width="40" height="40" /> </a>
-                <figcaption style="text-align:center;">Scala</figcaption>
-              </figure>
-              &nbsp; &nbsp;
-              
-              <figure class="item" style="display:inline-block;">
-                <a href="https://www.mathworks.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/arasgungore/arasgungore/main/icons/matlab.svg" alt="matlab" width="40" height="40" /> </a>
-                <figcaption style="text-align:center;">MATLAB</figcaption>
-              </figure>
-              &nbsp; &nbsp;
-
-              <figure class="item" style="display:inline-block;">
-                <a href="https://www.r-project.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/r/r-original.svg" alt="r" width="40" height="40" /> </a>
-                <figcaption style="text-align:center;">R</figcaption>
-              </figure>
+            <div class="project__bg">
+                <div class="project__container container grid">
+                    <div class="project__data">
+                        <h2 class="project__title">You have a new project?</h2>
+                        <p class="project__description">Contact me now and get discounts on your Web development projects.</p>
+                        <a href="#contact" class="button button--flex button--white">Contact me
+                            <i class="uil uil-message project__icon button__icon"></i>
+                        </a>
+                       
+                    </div>
+                    <!-- <img src="assets/img/project.png" alt="" class="project__img"> -->
+                </div>
             </div>
-          </div>
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <h4 style="text-align:left;color:#12d640;">Technologies</h4>
-            <div style="text-align:left;">
-              <figure class="item" style="display:inline-block;">
-                <a href="https://www.qt.io" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Qt_logo_2016.svg" alt="qt" width="40" height="40" /> </a>
-                <figcaption style="text-align:center;">Qt</figcaption>
-              </figure>
-              &nbsp; &nbsp;
 
-              <figure class="item" style="display:inline-block;">
-                <a href="https://flask.palletsprojects.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" alt="flask" width="40" height="40" /> </a>
-                <figcaption style="text-align:center;">Flask</figcaption>
-              </figure>
-              &nbsp; &nbsp;
-              
-              <figure class="item" style="display:inline-block;">
-                <a href="https://www.djangoproject.com" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width="40" height="40" /> </a>
-                <figcaption style="text-align:center;">Django</figcaption>
-              </figure>
-              &nbsp; &nbsp;
+        </section>
 
-              <figure class="item" style="display:inline-block;">
-                <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40" /> </a>
-                <figcaption style="text-align:center;">Node.js</figcaption>
-              </figure>
-              &nbsp; &nbsp;
+   
 
-              <figure class="item" style="display:inline-block;">
-                <a href="https://reactjs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="reactjs" width="40" height="40" /> </a>
-                <figcaption style="text-align:center;">React.js</figcaption>
-              </figure>
-              &nbsp; &nbsp;
-              
-              <figure class="item" style="display:inline-block;">
-                <a href="https://www.mysql.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40" /> </a>
-                <figcaption style="text-align:center;">MySQL</figcaption>
-              </figure>
-              &nbsp; &nbsp;
 
-              <figure class="item" style="display:inline-block;">
-                <a href="https://www.mongodb.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40" /> </a>
-                <figcaption style="text-align:center;">MongoDB</figcaption>
-              </figure>
-              &nbsp; &nbsp;
-              
-              <figure class="item" style="display:inline-block;">
-                <a href="https://git-scm.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/arasgungore/arasgungore/main/icons/git.svg" alt="git" width="40" height="40" /> </a>
-                <figcaption style="text-align:center;">Git</figcaption>
-              </figure>
-              &nbsp; &nbsp;
+        <!--==================== CONTACT ME ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact me</h2>
+            <span class="section__subtitle">Get in touch</span>
 
-              <figure class="item" style="display:inline-block;">
-                <a href="https://subversion.apache.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/arasgungore/arasgungore/main/icons/subversion.png" alt="subversion" width="40" height="40" /> </a>
-                <figcaption style="text-align:center;">SVN</figcaption>
-              </figure>
-              &nbsp; &nbsp;
-              
-              <figure class="item" style="display:inline-block;">
-                <a href="https://www.docker.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40" /> </a>
-                <figcaption style="text-align:center;">Docker</figcaption>
-              </figure>
-              &nbsp; &nbsp;
+            <div class="contact__container container grid">
+                <div>
+                    <div class="contact__information">
+                        <i class="uil uil-phone-alt contact__icon"></i>
 
-              <figure class="item" style="display:inline-block;">
-                <a href="https://aws.amazon.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40" /> </a>
-                <figcaption style="text-align:center;">AWS</figcaption>
-              </figure>
-              &nbsp; &nbsp;
+                        <div>
+                            <h3 class="contact__title">Call me</h3>
+                            <span class="contatc__subtitle">(+254) 722160280</span>
+                        </div>
+                    </div>
 
-              <figure class="item" style="display:inline-block;">
-                <a href="https://kubernetes.io" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="kubernetes" width="40" height="40" /> </a>
-                <figcaption style="text-align:center;">Kubernetes</figcaption>
-              </figure>
-              &nbsp; &nbsp;
+                    <div class="contact__information">
+                        <i class="uil uil-envelope contact__icon"></i>
 
-              <figure class="item" style="display:inline-block;">
-                <a href="https://cloud.google.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="gcp" width="40" height="40" /> </a>
-                <figcaption style="text-align:center;">GCP</figcaption>
-              </figure>
-              &nbsp; &nbsp;
+                        <div>
+                            <h3 class="contact__title">E-mail</h3>
+                            <span class="contatc__subtitle">ivynjoroge30@gmail.com</span>
+                        </div>
+                    </div>
 
-              <figure class="item" style="display:inline-block;">
-                <a href="https://kafka.apache.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/apache_kafka/apache_kafka-icon.svg" alt="kafka" width="40" height="40" /> </a>
-                <figcaption style="text-align:center;">Kafka</figcaption>
-              </figure>
-              &nbsp; &nbsp;
+                    <div class="contact__information">
+                        <i class="uil uil-map-marker contact__icon"></i>
 
-              <figure class="item" style="display:inline-block;">
-                <a href="https://www.rabbitmq.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/rabbitmq/rabbitmq-icon.svg" alt="rabbitmq" width="40" height="40" /> </a>
-                <figcaption style="text-align:center;">RabbitMQ</figcaption>
-              </figure>
-              &nbsp; &nbsp;
-              
-              <figure class="item" style="display:inline-block;">
-                <a href="https://unity.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" alt="unity" width="40" height="40" /> </a>
-                <figcaption style="text-align:center;">Unity</figcaption>
-              </figure>
-              &nbsp; &nbsp;
-              
-              <figure class="item" style="display:inline-block;">
-                <a href="https://www.linux.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40" /> </a>
-                <figcaption style="text-align:center;">Linux</figcaption>
-              </figure>
-              &nbsp; &nbsp;
+                        <div>
+                            <h3 class="contact__title">Location</h3>
+                            <span class="contatc__subtitle">Nairobi, Kenya</span>
+                        </div>
+                    </div>
+                </div>
 
-              <figure class="item" style="display:inline-block;">
-                <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40" /> </a>
-                <figcaption style="text-align:center;">Bash</figcaption>
-              </figure>
-              &nbsp; &nbsp;
-              
-              <figure class="item" style="display:inline-block;">
-                <a href="https://www.ros.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/arasgungore/arasgungore/main/icons/ros.svg" alt="ros" width="40" height="40" /> </a>
-                <figcaption style="text-align:center;">ROS</figcaption>
-              </figure>
+                <form action="" class="contact__form grid">
+                    <div class="contact__inputs grid">
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Name</label>
+                            <input type="text" class="contact__input">
+                        </div>
+
+                        <div class="contact__content">
+                            <label for="" class="contact__label">E-mail</label>
+                            <input type="email" class="contact__input">
+                        </div>
+                    </div>
+
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Subject</label>
+                        <input type="text" class="contact__input">
+                    </div>
+
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Description</label>
+                        <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                    </div>
+
+                    <div>
+                        <a href="#" class="button button--flex">
+                            Send message
+                            <i class="uil uil-message button__icon"></i>
+                        </a>
+                    </div>
+                </form>
             </div>
-          </div>
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <h4 style="text-align:left;color:#12d640;">Libraries</h4>
-            <div style="text-align:left;">
-              <figure class="item" style="display:inline-block;">
-                <a href="https://opencv.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" width="40" height="40" /> </a>
-                <figcaption style="text-align:center;">OpenCV</figcaption>
-              </figure>
-              &nbsp; &nbsp;
 
-              <figure class="item" style="display:inline-block;">
-                <a href="https://scikit-learn.org" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40" /> </a>
-                <figcaption style="text-align:center;">Scikit-Learn</figcaption>
-              </figure>
-              &nbsp; &nbsp;
+        </section>
+    </main>
 
-              <figure class="item" style="display:inline-block;">
-                <a href="https://pytorch.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40" /> </a>
-                <figcaption style="text-align:center;">PyTorch</figcaption>
-              </figure>
-              &nbsp; &nbsp;
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
 
-              <figure class="item" style="display:inline-block;">
-                <a href="https://keras.io" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/arasgungore/arasgungore/main/icons/keras.svg" alt="keras" width="40" height="40" /> </a>
-                <figcaption style="text-align:center;">Keras</figcaption>
-              </figure>
-              &nbsp; &nbsp;
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Ivy Njoroge</h1>
+                    <span class="footer__subtitle">Software Engineer</span>
+                </div>
 
-              <figure class="item" style="display:inline-block;">
-                <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40" /> </a>
-                <figcaption style="text-align:center;">TensorFlow</figcaption>
-              </figure>
-              &nbsp; &nbsp;
+                <ul class="footer__links">
+                    <li>
+                        <a href="#services" class="footer__link">Services</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contact</a>
+                    </li>
+                </ul>
 
-              <figure class="item" style="display:inline-block;">
-                <a href="https://numpy.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/arasgungore/arasgungore/main/icons/numpy.svg" alt="numpy" width="40" height="40" /> </a>
-                <figcaption style="text-align:center;">NumPy</figcaption>
-              </figure>
-              &nbsp; &nbsp;
-              
-              <figure class="item" style="display:inline-block;">
-                <a href="https://pandas.pydata.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40" /> </a>
-                <figcaption style="text-align:center;">Pandas</figcaption>
-              </figure>
-              &nbsp; &nbsp;
-
-              <figure class="item" style="display:inline-block;">
-                <a href="https://matplotlib.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/arasgungore/arasgungore/main/icons/matplotlib.svg" alt="matplotlib" width="40" height="40" /> </a>
-                <figcaption style="text-align:center;">Matplotlib</figcaption>
-              </figure>
-              &nbsp; &nbsp;
-
-              <figure class="item" style="display:inline-block;">
-                <a href="https://seaborn.pydata.org" target="_blank" rel="noreferrer"> <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="seaborn" width="40" height="40" /> </a>
-                <figcaption style="text-align:center;">Seaborn</figcaption>
-              </figure>
+                <div class="footer__socials">
+                    <a href="https://www.instagram.com/i.v.y_smiles/" target="_blank" class="footer__social">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/Connected_Bi" target="_blank" class="footer__social">
+                        <i class="uil uil-twitter-alt"></i>
+                    </a>
+                </div>
             </div>
-          </div>
+            <p class="footer__copy">&#169; IvyNjoroge. All rights reserved.</p>
         </div>
-      </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- ======= End Skills Section ======= -->
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+    
 
+    <!--==================== SWIPER JS ====================-->
+    <script src="./packages/js/swiper-bundle.min.js"></script>
 
-
-  <!-- ======= Start CV Section ======= -->
-
-  <section id="cv" class="services">
-    <div class="container">
-      <div class="section-title">
-        <h2>CV</h2>
-      </div>
-      <div class="row">
-        <div class="col-md-3 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-          <a href="https://drive.google.com/file/d/1TGwMpZl6FDeQk1w_-EetbspCuzu16kCF/view?usp=sharing" target="_blank"><div class="icon"><i class="icofont-page"></i></div></a>
-          <h4 class="title"><a style="color:#12d640;" href="https://drive.google.com/file/d/1TGwMpZl6FDeQk1w_-EetbspCuzu16kCF/view?usp=sharing" target="_blank">Curriculum Vitae</a></h4>
-          <p class="description" style="color:#fff;">The above link contains my CV. Also, you can check out the code for this CV <a href="https://github.com/arasgungore/arasgungore-CV" target="_blank">here</a>.</p>
-        </div>
-        <div class="col-md-3 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-          <a href="https://resume.github.io/?arasgungore" target="_blank"><div class="icon"><i class="bx bxl-github"></i></div></a>
-          <h4 class="title"><a style="color:#12d640;" href="https://resume.github.io/?arasgungore" target="_blank">GitHub Résumé</a></h4>
-          <p class="description" style="color:#fff;">The above link contains my résumé based on my GitHub repos/activity. Also, you can check out the code for this résumé <a href="https://github.com/resume/resume.github.com" target="_blank">here</a>.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <!-- ======= End CV Section ======= -->
-
-
-
-  <!-- ======= Start Contact Section ======= -->
-
-  <section id="contact" class="contact">
-    <div class="container">
-      <div class="section-title">
-        <h2>Contact</h2>
-      </div>
-      <div class="row">
-        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-share-alt"></i>
-            <h3 style="color:#12d640;">Social Profiles</h3>
-            <div class="social-links">
-              <a href="mailto:arasgungore09@gmail.com" target="_blank" class="gmail"><i class="bx bxl-google"></i></a>
-              <a href="https://www.linkedin.com/in/arasgungore" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-              <a href="https://github.com/arasgungore" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-              <a href="https://www.youtube.com/@arasgungore" target="_blank" class="youtube"><i class="bx bxl-youtube"></i></a>
-              <!-- <a href="https://www.researchgate.net/profile/Aras-Guengoere" target="_blank" class="researchgate"><i class="bx bxl-researchgate"></i></a> -->
-              <!-- <a href="https://stackoverflow.com/users/23314477/arasgungore" target="_blank" class="stackoverflow"><i class="bx bxl-stackoverflow"></i></a> -->
-              <!-- <a href="https://www.hackerrank.com/arasgungore" target="_blank" class="hackerrank"><img class="svg" src="assets/img/social/hackerrank.svg" width="13" /></a> -->
-              <!-- <a href="https://leetcode.com/arasgungore" target="_blank" class="leetcode"><img class="svg" src="assets/img/social/leetcode.svg" width="13" /></a> -->
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-envelope"></i>
-            <h3 style="color:#12d640;">Email</h3>
-            <a href="mailto:arasgungore09@gmail.com" target="_blank"> <p><i class="icofont-rounded-right"></i> arasgungore09@gmail.com</p> </a>
-            <!-- <a href="mailto:aras.gungore@boun.edu.tr" target="_blank"> <p><i class="icofont-rounded-right"></i> aras.gungore@boun.edu.tr</p> </a> -->
-          </div>
-        </div>
-      </div>
-      <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
-        <div class="row">
-          <div class="col-md-6 form-group">
-            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-          </div>
-          <div class="col-md-6 form-group mt-3 mt-md-0">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-          </div>
-        </div>
-        <div class="form-group mt-3">
-          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-        </div>
-        <div class="form-group mt-3">
-          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-        </div>
-        <div class="my-3">
-          <div class="loading">Loading</div>
-          <div class="error-message"></div>
-          <div class="sent-message">Your message has been sent. Thank you!</div>
-        </div>
-        <div class="text-center"><button type="submit">Send Message</button></div>
-      </form>
-    </div>
-  </section>
-
-  <!-- ======= End Contact Section ======= -->
-
-
-
-  <!-- Vendor JS Files -->
-
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-
-  <script type="text/javascript">
-    var typed = new Typed('.typing',{
-      strings: ["an Engineer", "a Developer", "a Researcher"],
-      loop: true,
-      typeSpeed: 85,
-      backSpeed: 85
-    });
-  </script>
-
-
-
-  <!-- Template Main JS File -->
-
-  <script src="assets/js/main.js"></script>
-
+    <!--==================== MAIN JS ====================-->
+    <script src="./packages/js/main.js"></script>
 </body>
 
 </html>

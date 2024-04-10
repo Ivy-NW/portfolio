@@ -1,20 +1,20 @@
-# arasgungore.github.io
+## Responsive Portfolio Website ✨
 
-My portfolio website built using HTML, CSS, and JavaScript. You can check it out [here](https://arasgungore.github.io).
+Responsive Portfolio Website Using HTML, CSS and JavaScript, with a beautiful user interface. 
+Website contains: 
+- Header 
+- Home
+- About
+- Skills
+- Qualification
+- Services
+- Portfolio
+- Project in mind
+- Testimonial
+- Contact
+- Footer 
 
+If u liked my website and the code was useful to you, <br>
+feel free to leave a star (much appreciated) fork it and customize as you like! :)
 
-
-## Screenshots
-
-<p float="center">
-    <img src="https://github.com/arasgungore/arasgungore.github.io/blob/main/Screenshots/1.png" width="800">
-</p>
-
-
-
-## Author
-
-👤 **Aras Güngöre**
-
-* LinkedIn: [@arasgungore](https://www.linkedin.com/in/arasgungore)
-* GitHub: [@arasgungore](https://github.com/arasgungore)
+- Inspired design by Bedimcode-Alexa design 🙌
